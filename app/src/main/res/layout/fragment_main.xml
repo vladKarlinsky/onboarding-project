@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <EditText
+        android:id="@+id/inputField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/app_name"

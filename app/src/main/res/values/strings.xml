@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Movie Recommendations</string>
     <string name="Main">Enter a random combination of five words!</string>
-    <string name="Result">Create Recommendations</string>
+    <string name="Result">Your Movie Recommendations!</string>
 </resources>

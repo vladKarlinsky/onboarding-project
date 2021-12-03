@@ -21,13 +21,13 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
-interface movieAPI {
+interface MovieAPI {
 
     @GET("3/search/movie?" +
             "api_key=7ad79a1981d86b8bd5a35226e046f626")
     fun getMoviesSearch(@Query("query") query: String): Call<SearchResponseMovies>
 }
-object MovieApi {
-    val retrofitService : movieAPI by lazy {
-        retrofit.create(movieAPI::class.java) }
+object Api {
+    val retrofitService : MovieAPI by lazy {
+        retrofit.create(MovieAPI::class.java) }
 }
