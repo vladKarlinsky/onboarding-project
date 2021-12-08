@@ -40,7 +40,6 @@ class RecommenderViewModel : ViewModel() {
                 _status.value = MovieApiStatus.ERROR
                 _movies.value = mutableListOf()
             }
-            Log.v("FINAL", _movies.value.toString())
         }
     }
 }

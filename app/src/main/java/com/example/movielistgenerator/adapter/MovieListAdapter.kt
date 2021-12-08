@@ -39,7 +39,7 @@ class MovieListAdapter:
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        val marsPhoto = getItem(position)
-        holder.bind(marsPhoto)
+        val movieItem = getItem(position)
+        holder.bind(movieItem)
     }
 }
