@@ -32,7 +32,7 @@ class RecommenderViewModel : ViewModel() {
         viewModelScope.launch {
             _status.value = MovieApiStatus.LOADING
             try {
-                val moviesFromRecommender = MovieRecommender.run(userInput.value.toString())
+                val moviesFromRecommender = MovieRecommender.Recommender.run(userInput.value.toString())
                 _movies.value = moviesFromRecommender
                 _status.value = MovieApiStatus.DONE
             } catch (e: Exception) {

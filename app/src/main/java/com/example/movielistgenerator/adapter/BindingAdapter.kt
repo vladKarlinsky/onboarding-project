@@ -23,7 +23,6 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<Movie>?) {
 @BindingAdapter("imageUrl")
 fun bindImage(imgView: ImageView, imgUrl: String?) {
         imgView.load(IMAGE_BASE_URL + imgUrl) {
-            Log.v("IMG",IMAGE_BASE_URL + imgUrl)
             placeholder(R.drawable.loading_anim)
             error(R.drawable.ic_broken_image)
 
