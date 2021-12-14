@@ -1,6 +1,11 @@
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven {
+            url "https://software.mobile.pendo.io/artifactory/androidx-release"
+            // <For Android Support (not AndroidX) use the below instead of the above>
+            // url "https://software.mobile.pendo.io/artifactory/android-release"
+        }
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon

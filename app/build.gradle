@@ -53,4 +53,6 @@ dependencies {
     implementation(project(":app:movierecommender"))
     // Coil
     implementation "io.coil-kt:coil:1.1.1"
+    // Pendo
+    implementation group:'sdk.pendo.io' , name:'pendoIO', version:'2.12.1.2836', changing:true
 }
